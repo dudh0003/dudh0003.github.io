@@ -1,1 +1,35 @@
 /* mobile view begins here */
+header {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem;
+}
+
+/* this code is for h1 and h2 */
+h1 {
+    font-size: 70px;
+    font-family: Montserrat;
+    margin: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin: 2.5rem;
+    margin-top: 0;
+    font-family: Montserrat;
+}
+
+/* this code is for div element */
+div {
+    background-color: #F7F7FF;
+    background-image: url(../images/bg-image/scooter.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: 18rem 1fr 1fr;
+}
+
+/* code to change forms begins here */
