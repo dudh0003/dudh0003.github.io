@@ -1,4 +1,9 @@
 /* mobile view begins here */
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
 header {
     max-width: 100%;
     height: auto;
@@ -9,27 +14,109 @@ header {
 h1 {
     font-size: 70px;
     font-family: Montserrat;
-    margin: 2rem;
+    /* margin: 2rem; */
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: normal;
-    text-align: center;
-    margin: 2.5rem;
-    margin-top: 0;
+    margin-right: 12px;
+    padding-top: 4rem;
+    margin: 0;
     font-family: Montserrat;
 }
 
 /* this code is for div element */
 div {
     background-color: #F7F7FF;
+    /* margin: 0;
+    padding: 0; */
     background-image: url(../images/bg-image/scooter.svg);
     background-position: 100% 100%;
+    padding: 1rem 1rem 3rem 3rem;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     display: grid;
-    grid-template-rows: 18rem 1fr 1fr;
+    grid-template-rows: 350px 1fr 1fr;
 }
 
 /* code to change forms begins here */
+.contact {
+    background-color: white;
+    line-height: 40px;
+    border: 0px solid black;
+    padding: 2rem 0rem 2rem 1rem;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px #D6BCBC;
+    grid-row: 3/4;
+}
+
+.col-space {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.paragraph p:nth-child(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.paragraph p:nth-child(2) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.name, .last-name, .email, .phone {
+    width: 15rem;
+    background-color: #F7F7FF;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.button {
+    background-color: #57EEAB;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    width: 15rem;
+    padding: 1.5rem;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas: 
+    "first second";
+}
+
+.applied {
+    grid-area: first;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 1rem;
+    /* margin-right: 1rem; */
+}
+
+.status {
+    grid-area: second;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #FF8480;
+    line-height: 20px;
+    margin-top: 1rem;
+    /* margin-right: 1rem; */
+}
+
+footer {
+    background-color: #FFFD8C;
+    padding: 1rem 1rem 1rem 6rem;
+    display: grid;
+    grid-template-rows: 100px 70px 50px 50px;
+}
