@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    max-width: 100%;
     height: auto;
     margin: 2rem;
 }
@@ -14,15 +13,12 @@ header {
 h1 {
     font-size: 70px;
     font-family: Montserrat;
-    /* margin: 2rem; */
+    width: 300px;
 }
 
 h2 {
     font-size: 26px;
     font-weight: normal;
-    margin-right: 12px;
-    padding-top: 4rem;
-    margin: 0;
     font-family: Montserrat;
 }
 
@@ -116,7 +112,304 @@ div {
 
 footer {
     background-color: #FFFD8C;
-    padding: 1rem 1rem 1rem 6rem;
+    padding: 3rem;
+    padding-top: 0;
+    padding-left: 16px;
     display: grid;
     grid-template-rows: 100px 70px 50px 50px;
+}
+
+p.bold-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1rem;
+    padding: 14px;
+}
+
+p.regular-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-top: 0;
+}
+
+.hours {
+    border: none;
+    padding: 4px;
+    border-radius: 7px;
+    width: 60px;
+}
+
+.city {
+	border: none;
+	padding: 4px; 
+	border-radius: 5px;
+}
+
+.button-2 {
+    background-color: #ff8480;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 12px;
+    width: 14rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* social media icons */
+figure.social-media {
+    /* padding: 2rem; */
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* tablet view begin here */
+@media (min-width: 550px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* this is for headings */
+    header {
+        background-color: #F7F7FF;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    div {
+        display: grid;
+        /* grid-template-rows: 300px 200px 1fr; */
+        grid-template-columns: 50px 350px 1fr;
+        background-size: 700px 700px;
+	    background-position: 150px 280px;
+    }
+    
+    h1 {
+        font-size: 80px;
+        margin: 0;
+        width: 600px;
+    }
+
+    h2 {
+        margin-top: 0;
+        width: 750px;
+        font-size: 30px;
+        display: grid;
+        grid-row: 2/3;
+    }
+
+    /* contact form code */
+    .contact {
+        border: 0px solid black;
+        padding: 2rem;
+        width: 700px;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 7px 7px 7px 7px #d6bcbc;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        line-height: 55px;
+
+    }
+
+    .paragraph {
+        line-height: 10px;
+    }
+
+    .paragraph p:nth-child(1) {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        font-weight: lighter;
+    }
+
+    .paragraph p:nth-child(2) {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    .name, .last-name, .email, .phone {
+        background-color: #f7f7ff;
+        width: 600px;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+
+    .col-space {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .button {
+        width: 620px;
+        font-size: 40px;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-areas: 
+        "first second";
+        letter-spacing: 2px;
+    }
+
+    .applied{
+        grid-area: first;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin-right: 0;
+    }
+    .status {
+        grid-area: second;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #ff8480;
+        margin-left: 0;
+    }
+
+    footer {
+        background-color: #FFFD8C;
+        padding: 3rem;
+        padding-top: 0;
+        padding-left: 20px;
+        display: grid;
+        grid-template-rows: 100px 70px 50px 50px;
+    }
+
+    p.bold-text {
+        font-size: 30px;
+        margin-left: 5rem;
+    }
+
+    p.regular-text {
+        font-size: 20px;
+        margin-left: 6rem;
+    }
+
+    .second-form {
+        margin-left: 6rem;
+    }
+
+    .hours {
+        border: none;
+        padding: 10px;
+        border-radius: 7px;
+        width: 100px;
+    }
+
+    .city {
+        border: none;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    .button-2 {
+        background-color: #ff8480;
+        color: white;
+        border: none;
+        padding: 7px;
+        border-radius: 7px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    figure.social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        background-color: #f7f7ff;
+        padding: 1rem 1rem 1rem 5rem;
+    }
+
+    div {
+        background-color: #F7F7FF;
+        padding: 1rem 1rem 5rem 5rem;
+        background-size: 500px 500px;
+        background-position: 600px 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 600px 1fr;
+    }
+
+    h1 {
+        font-size: 60px;
+        width: 70%;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 90%;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-top: 14rem;
+    }
+
+    .contact {
+        width: 300px;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .name, .last-name, .email, .phone {
+        background-color: #f7f7ff;
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+
+    .col-space {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .button {
+        width: 320px;
+        font-size: 20px;
+    }
+
+    .paragraph p:nth-child(1) {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .paragraph p:nth-child(2) {
+        font-size: 20px;
+    }
+
+    footer {
+        
+    }
+
+    figure.social-media {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
