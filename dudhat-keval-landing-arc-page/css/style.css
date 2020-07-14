@@ -26,3 +26,66 @@ li a {
     width: 70px;
     height: auto;
 }
+
+.container {
+    margin: 2rem;
+    display: grid;
+}
+
+.head-1 {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+}
+
+.para-1 {
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    width: 90%;
+}
+
+figcaption {
+    font-family: 'Raleway', sans-serif;
+    color: #26A682;
+    font-size: 12px;
+}
+
+.button-1 {
+    width: 200px;
+    font-weight: bold;
+    height: auto;
+    border-radius: 30px;
+    border: 0px solid #707070;
+    font-size: 20px;
+    box-shadow: #3C3B3A;
+    background-color: #26A682;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+.figure {
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.icon-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.icon-2 {
+    grid-row: 1/2;
+}
+
+.icon-3 {
+    
+}
+
+.icon-3 {
+    grid-column: 1/2;
+}
