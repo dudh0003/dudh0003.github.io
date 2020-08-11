@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 1rem;
+    padding-left: 0;
+    font-family: 'Rowdies', cursive;
+
+}
+
+.head-1, .head-2 {
+    margin-left: 2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5 {
+    max-width: 100%;
+    height: auto;
+}
+
+.head-3 {
+    margin-left: 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.head-4 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.head-5 {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 1rem;
+}
+
+.p1, .p2, .p3, .p4, .p5 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.heading-1, .heading-2 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 1rem;
+}
