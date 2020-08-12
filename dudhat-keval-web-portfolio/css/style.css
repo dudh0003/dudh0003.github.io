@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
-
+/* to give body 0 margin */
 body {
     margin: 0;
 }
-
+/* for header */
 header {
     background-color: black;
     color: white;
 }
-
+/* this code is for navigation */
 nav ul {
     list-style-type: none;
 }
@@ -40,6 +40,7 @@ ul li {
     text-align: center;
     font-size: 32px;
     font-family: 'PT Sans', sans-serif;
+    color: #87620D;
 }
 
 .head-5 {
@@ -55,6 +56,7 @@ ul li {
 
 .p1, .p2, .p3, .p4, .p5 {
     font-family: 'PT Sans', sans-serif;
+    color: #87620D;
 }
 
 .heading-1, .heading-2 {
@@ -62,6 +64,75 @@ ul li {
     font-family: 'PT Sans', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.section-1, .section-2, .section-3 {
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.caption-1, .caption-3, .caption-5 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    padding: 10px;
+}
+
+.caption-2, .caption-4, .caption-6 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.para-1, .para-2, .para-3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.caption-7 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.heading-1 {
+    color: #87620D;
+}
+/* codes in this to between next comment is for contact form */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #E1E1E1;
+    align-items: center;
+}
+
+#fname, #lname, #subject, #message {
+    width: 80%;
+    margin-left: 2rem;
+    border: 1px solid #87620D;
+    height: 30px;
+}
+
+#message {
+    height: 95px;
+}
+/* this code is for styling button */
+.button {
+    width: 30%;
+    margin-left: 2rem;
+    background-color: #87620D;
+    color: white;
+    border: #87620D;
+    padding: 10px;
+    margin-top: 1rem;
+}
+/* this code is to give styles in footer menu */
 footer {
     text-align: center;
     font-family: 'Rowdies', cursive;
@@ -69,4 +140,64 @@ footer {
     color: white;
     font-size: 18px;
     padding: 1rem;
+}
+    /* codes in this media query will affect "about" section and contact-form */
+@media (min-width: 600px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 150px 120px 1fr 1fr;
+    }
+
+    .head-4 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .head-5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .container {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .caption-7 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .main-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #subject {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: 90%;
+    }
+
+    #message {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        width: 90%;
+    }
+    /* this code is for button width and padding */
+    .button {
+        width: 45%;
+        margin-bottom: 3rem;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* this code is to move navigation to right */
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
